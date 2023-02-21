@@ -1,0 +1,105 @@
+.resume {
+    background-color: $background-theme;
+    color: #ffffff;
+    padding-top: 120px;
+    min-height: 559px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        z-index: 1;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        padding: 0 65px 0 89px;
+        display: grid;
+        grid-template-columns: repeat(2, 425px);
+        column-gap: 136px
+    }
+    &__column {
+        &-title {
+            position: relative;
+            padding-left: 50px;
+            &:before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                left: 0;
+                width: 15px;
+                height: 15px;
+                border-radius: 100%;
+                z-index: 1;
+                background-color: $main-color;
+
+            }
+        }
+        ul {
+            list-style-type: none;
+            li {
+                position: relative;
+                &:after {
+                    content: '';
+                    width: 1px;
+                    height: calc(100% + 16px);
+                    position: absolute;
+                    top: -16px;
+                    left: 7px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    &__item {
+        position: relative;
+        &:before {
+            content: '';
+            height: 1px;
+            width: 45px;
+            position: absolute;
+            top: 68px;
+            left: 7px;
+            z-index: 1;
+            background-color: #fff;
+        }
+        &-head {
+            position: relative;
+            padding: 45px 0 0 100px;
+            h4 {
+                margin-bottom: 0;
+            }
+        }
+        &-body {
+            padding-left: 43px;
+            margin-top: 12px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+        &-icon {
+            position: absolute;
+            top: 50px;
+            left: 45px;
+            @include before_circle;
+            z-index: 1;
+            img {
+                position: absolute;
+                top: 14px;
+                left: 17px;
+            }
+        }
+        &-location {
+            font-size: 12px;
+            line-height: 18px;
+            margin-top: 5px;
+        }
+    }
+}

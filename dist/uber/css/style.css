@@ -1,0 +1,190 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.header {
+    position: relative;
+}
+nav {
+    height: 50px;
+    background: #212121;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 70px;
+    margin: 0;
+    list-style-type: none;
+    
+}
+.menu .menu_link{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 300; 
+    text-decoration: none;
+}
+.menu .menu_item {
+    border-right: 2px dotted #000000;
+    padding-right: 45px;
+    
+}
+.subheader {
+    min-height: 84px;
+    background: rgba(0,0,0,.6);
+    position: absolute;
+    width: 100%;
+}
+.subheader .subheader_logo {
+    max-width: 100%;
+    margin-top: 16px;
+    display: block;
+}
+.subheader .subheader_official {
+    margin-top: 6px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 13px;
+    opacity: 0.5;
+}
+.subheader .subheader_call {
+    margin-top: 19px;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: right;
+    color: #FFFFFF;
+}
+.subheader .subheader_phone {
+    display: block;
+    margin-top: 8px;
+    font-weight: 400;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: right;
+    line-height: 12px;
+    text-decoration: none;
+}
+.subheader .subheader_btn {
+    margin-top: 19px;
+    width: 172px;
+    height: 46px;
+    box-shadow: inset 0px -3px 0px rgba(0, 0, 0, 0.12);
+    background-image: linear-gradient(to top, #1EACC7 0%, #4CE2FF 100%);
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.21);
+    border: none;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.promo {
+    min-height: 800px;
+    background: url(../img/bg/uber_bg.jpg) center center/cover no-repeat;
+    padding: 150px 0 135px 0;
+}
+.promo .promo_header {
+    margin: 0;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 60px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.promo .promo_subheader {
+    margin: 0;
+    margin-top: 22px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 36px;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.promo .promo_descr {
+    margin-top: 23px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    text-align: center;
+}
+.promo .promo_btn {
+    width: 259px;
+    height: 63px;
+    display: block;
+    margin: 115px auto 0 auto;
+    background: linear-gradient(0deg, #1EACC7 0%, #4CE2FF 100%);
+    box-shadow: inset 0px -4px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 63px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
+    border: none;
+}
+.reason {
+    min-height: 969px;
+    padding: 138px 0 64px 0;
+}
+.reason .label {
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin: 0 auto;
+    text-align: center;
+}
+.reason .title {
+    display: block;
+    text-align: center;
+    margin-top: 33px;
+    color: #222222;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 48px;
+}
+.reason .reasons_block {
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+}
+.reason .reasons_block .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 113px;
+    height: 113px;
+    background: #1EACC7;
+    border-radius: 100%;
+    margin-right: 25px;
+}
+.reason .reasons_block .reason_descr {
+    width: 343px;
+
+}
+.reason .reasons_block .reasons_subtitle {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1EACC7;
+
+
+}
+.reason .reasons_block .reasons_text {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 21px;
+    color: #202020;
+}

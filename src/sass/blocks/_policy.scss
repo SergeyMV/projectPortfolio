@@ -1,0 +1,13 @@
+.policy {
+    background-color: $background-theme;
+    color: #fff;
+    &__wrapper {
+        padding: 40px;
+        div {
+            padding: 20px 0;
+        }
+        p {
+            padding-left: 40px;
+        }
+    }
+}
