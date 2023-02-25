@@ -94,7 +94,7 @@
         <div class="menu__overlay"></div>
     </div>
 
-    <section class="promo">
+    <section id="up" class="promo">
         <div class="hamburger">
             <span></span>
             <span class="long"></span>
@@ -460,7 +460,7 @@
                     <div class="title title_fz14 contacts__text">
                         Or leave your information and I'll write you myself:
                     </div>
-                    <form action="#" class="contacts__form">
+                    <form id="consultation-form" action="#" class="contacts__form">
                         <div class="contacts__input">
                             <input required name="name" id="name" type="text">
                             <label for="name">Your name</label>
@@ -470,11 +470,11 @@
                             <label for="email">Your email</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea name="text" id="text"></textarea>
+                            <textarea name="textarea" id="text"></textarea>
                             <label for="text">Your message</label>
                         </div>
                         <div class="contacts__triggers">
-                            <button class="contacts__btn btn">Send message</button>
+                            <button data-modal="consultation" class="contacts__btn btn button_submit">Send message</button>
                             <div class="contacts__policy">
                                 <input required type="checkbox">
                                 <span>I agree with <a href="/policy.html">the privacy policy</a></span>
@@ -485,7 +485,23 @@
             </div>
         </div>
     </section>
+
+    <div class="overlay">
+        <div class="modal modal_mini" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Thank you for your submission!</div>
+            <div class="modal__descr">I will get back to you shortly!</div>
+        </div>
+    </div>
+
+    <a href="#up" class="pageup">
+        <img src="icons/up.svg" alt="up">
+    </a>
     
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
