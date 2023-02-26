@@ -278,6 +278,19 @@
         width: 100%;
         padding: 0 15px;
     }
+    .pageup {
+        bottom: 20px;
+        right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    .modal {
+        width: 220px;
+        padding: 29px;
+        &_mini {
+            min-height: 130px;
+        }
+    }
     .promo {
         background: url('../img/main_bg_mini.jpg') no-repeat 25%/cover;
         &__title {
